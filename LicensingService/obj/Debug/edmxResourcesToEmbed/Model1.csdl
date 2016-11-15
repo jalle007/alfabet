@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SerialsBank">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Serial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Subscriptions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Users" Type="Int32" />
+    <Property Name="Features" Type="Int32" />
+    <Property Name="Databases" Type="Int32" />
+    <Property Name="Serial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="dbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SerialsBank" EntityType="Self.SerialsBank" />
+    <EntitySet Name="Subscriptions" EntityType="Self.Subscriptions" />
+  </EntityContainer>
+</Schema>

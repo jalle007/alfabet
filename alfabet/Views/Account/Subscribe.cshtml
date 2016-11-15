@@ -1,0 +1,95 @@
+﻿@model alfabet.Models.SubscribeViewModel
+
+@{
+  List<SelectListItem> listItems = new List<SelectListItem>();
+  listItems.Add(new SelectListItem { Text = "Feature Set 1", Value = "1" ,Selected = true});
+  listItems.Add(new SelectListItem { Text = "Feature Set 2", Value = "2" });
+  listItems.Add(new SelectListItem { Text = "Feature Set 3", Value = "3" });
+}
+
+@using (Html.BeginForm("Subscribe", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" })) {
+  @Html.AntiForgeryToken()
+
+  <div class="row" style="padding-top: 50px;">
+
+    <div class="col-md-6 col-md-offset-3 rounded" style="height: 450px !important;">
+      <h2>Create your subscription plan</h2>
+
+      <div class="row">
+        <div class="col-md-11 rounded" style="background: #ffffff; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; height: 300px !important; padding: 20px;">
+
+          <p>
+            <div class="row">
+              <div class="col-md-2 vcenter">
+                <img src="~/Content/system-users.png" width="60" height="60" />
+              </div>
+              <div class="col-md-7 vcenter">
+                Choose number of users for this plan
+              </div>
+              <div class="col-md-2 vcenter hright">
+                @Html.EditorFor(m => m.Users, new {@class = "form-control"})
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2 vcenter">
+                <img src="~/Content/feature-clipart-feature.jpg" width="60" height="60" />
+              </div>
+              <div class="col-md-6 vcenter">
+                Choose features
+              </div>
+              <div class="col-md-3    vcenter hright">
+                @Html.DropDownListFor(m => m.Features, listItems, "-- Select Features --", new {@class = "form-control", @style = "width: 145px!important; max-width: 145px!important;"})
+                @*@Html.EditorFor(m => m.Features, new {@class = "form-control"})*@
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2 vcenter">
+                <img src="~/Content/databases.png" width="60" height="60" />
+              </div>
+              <div class="col-md-7 vcenter">
+                Choose number of databases
+              </div>
+              <div class="col-md-2 vcenter hright">
+                @Html.EditorFor(m => m.Databases, new {@class = "form-control width100"})
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 col-md-offset-8 vcenter">
+                <h3 id="total"></h3>
+              </div>
+            </div>
+
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 col-md-offset-9 vcenter">
+          <input type="submit" class="btn btn-primary" value="Subscribe >>" />
+        </div>
+      </div>
+    </div></div>
+  
+}
+
+<script type="text/javascript">
+  function calculate() {
+    var users = parseInt($("#Users").val());
+    var dbs = parseInt($("#Databases").val());
+    var features = parseInt($("#Features").val());
+
+    var total = users * 10 * dbs * 50 * features * 20;
+    if (!isNaN(total))
+      $("#total").text("Total: $" + total); //This shows the calculated field
+  }
+
+  $(document).ready(function () {
+    calculate(); //Calculate on page load
+    $("#Users").change(calculate);
+    $("#Databases").change(calculate);
+    $("#Features").change(calculate);
+  });
+</script>

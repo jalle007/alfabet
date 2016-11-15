@@ -1,0 +1,10 @@
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\LicensingService.dll.config
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\LicensingService.dll
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\LicensingService.pdb
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.dll
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.SqlServer.dll
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.xml
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.SqlServer.xml
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.csprojResolveAssemblyReference.cache
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.dll
+C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.pdb

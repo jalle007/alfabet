@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SerialsBank">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Serial" Type="varchar" MaxLength="100" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Subscriptions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="100" />
+    <Property Name="Users" Type="int" />
+    <Property Name="Features" Type="int" />
+    <Property Name="Databases" Type="int" />
+    <Property Name="Serial" Type="varchar" MaxLength="100" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="dbModelStoreContainer">
+    <EntitySet Name="SerialsBank" EntityType="Self.SerialsBank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subscriptions" EntityType="Self.Subscriptions" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

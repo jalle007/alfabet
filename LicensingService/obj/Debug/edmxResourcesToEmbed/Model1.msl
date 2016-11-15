@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbModelStoreContainer" CdmEntityContainer="dbEntities">
+    <EntitySetMapping Name="SerialsBank">
+      <EntityTypeMapping TypeName="dbModel.SerialsBank">
+        <MappingFragment StoreEntitySet="SerialsBank">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subscriptions">
+      <EntityTypeMapping TypeName="dbModel.Subscriptions">
+        <MappingFragment StoreEntitySet="Subscriptions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Users" ColumnName="Users" />
+          <ScalarProperty Name="Features" ColumnName="Features" />
+          <ScalarProperty Name="Databases" ColumnName="Databases" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
