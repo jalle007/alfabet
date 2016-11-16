@@ -5,6 +5,5 @@ C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFrame
 C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.SqlServer.dll
 C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.xml
 C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\bin\EntityFramework.SqlServer.xml
-C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.csprojResolveAssemblyReference.cache
 C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.dll
 C:\Users\jalle\Dropbox\Projects\Alfabet\alfabet\LicensingService\obj\Debug\LicensingService.pdb
