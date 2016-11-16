@@ -87,6 +87,9 @@
   }
 
   $(document).ready(function () {
+    $("#Users").width("100px");
+    $("#Databases").width("100px");
+    
     calculate(); //Calculate on page load
     $("#Users").change(calculate);
     $("#Databases").change(calculate);
