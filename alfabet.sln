@@ -4,13 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alfabet", "alfabet\alfabet.csproj", "{E3B3725D-688C-4FF6-8948-18C002B103E2}"
-	ProjectSection(ProjectDependencies) = postProject
-		{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB} = {1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "alfabet.Tests", "alfabet.Tests\alfabet.Tests.csproj", "{08B555A1-77C4-4EAE-AA57-2B0F2A1320DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensingService", "LicensingService\LicensingService.csproj", "{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +21,6 @@ Global
 		{08B555A1-77C4-4EAE-AA57-2B0F2A1320DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B555A1-77C4-4EAE-AA57-2B0F2A1320DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B555A1-77C4-4EAE-AA57-2B0F2A1320DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CA7B2E7-1409-409F-9CB8-C2E6B82B70BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
